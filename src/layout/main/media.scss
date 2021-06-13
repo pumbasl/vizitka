@@ -1,0 +1,27 @@
+@media (min-width: 320px) and (max-width: 528px) {
+    .mainContainer{
+        justify-content: center;
+        .info{
+            .scaleTitleName{
+                background: none;
+            }
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 743px) {
+    .mainContainer{
+        text-align: center;
+        .info{
+            .scaleTitleName{
+                .titleName{
+                    padding: 0;
+                }
+            }
+            .otherInfo{
+                .descOpinion{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
