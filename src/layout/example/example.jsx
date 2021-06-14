@@ -7,12 +7,12 @@ export default function Example(){
     return(
         <MainContainer>
 
-            <Card style={{ width: '18rem', height: '400px', color: 'black' }} className="mr-2 mt-2">
+            <Card style={{ width: '18rem', height: '420px', color: 'black' }} className="mr-2 mt-2">
                 <Card.Img variant="top" height="180px" src="https://picsum.photos/200/" />
                 <Card.Body>
                     <Card.Title>Сайт визитка (Старая)</Card.Title>
                     <Card.Text>
-                        Мой сайт визитка который был написал год назад с использованием немного PHP + bootstrap v5.0.
+                        Мой сайт визитка который был написал год назад. Немного PHP + bootstrap v5.0.
                     </Card.Text>
                     <footer>
                         <div className="text-center">
@@ -22,7 +22,7 @@ export default function Example(){
                 </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem', height: '400px', color: 'black' }} className="mr-2 mt-2">
+            <Card style={{ width: '18rem', height: '420px', color: 'black' }} className="mr-2 mt-2">
             <Card.Img variant="top" height="180px" src="https://picsum.photos/200/" />
                 <Card.Body>
                     <Card.Title>Сайт со спектром не больших услуг</Card.Title>
@@ -37,7 +37,7 @@ export default function Example(){
                 </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem', height: '400px', color: 'black' }} className="mr-2 mt-2">
+            <Card style={{ width: '18rem', height: '420px', color: 'black' }} className="mr-2 mt-2">
             <Card.Img variant="top" height="180px" src="https://picsum.photos/200/" />
                 <Card.Body>
                     <Card.Title>Сайт на котором Вы сейчас находитесь)</Card.Title>

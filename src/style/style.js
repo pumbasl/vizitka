@@ -9,8 +9,8 @@ const ContactsContainer = styled.div({
     boxShadow: "0 0 10px rgba(0,0,0,0.5)",
 });
 
-const MainContainerStyle = styled.div({
-    width: props => props.width ? props.width : "100vw",
+const MainContainerStyle = styled.div(props => ({
+    width: props.width ? props.width : "100vw",
     color: 'white',
     display: 'flex',
     flexWrap: 'wrap',
@@ -18,19 +18,6 @@ const MainContainerStyle = styled.div({
     justifyContent: 'center',
     height: '80vh',
     padding: '20px',
-});
+}));
 
-// const DefaultCenterCont
-
-const FooterStyle = styled.div({
-    position: 'fixed',
-    bottom: 0,
-    color: 'white',
-    textAlign: 'center',
-    width: '100%',
-    height: '5vh',
-    backgroundColor: 'rgba(54, 0, 95, .3)',
-    paddingTop: '10px'
-});
-
-export { ContactsContainer, MainContainerStyle, FooterStyle };
+export { ContactsContainer, MainContainerStyle };

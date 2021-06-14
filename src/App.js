@@ -13,7 +13,6 @@ import Background from './components/background/background';
 import ErrorBoundary from './layout/errors/ErrorBoundary'; // Предохранитель
 
 import Header from './layout/header/header';
-import Footer from './layout/footer/footer';
 
 const Main = lazy(() => import("./layout/main/main"));
 const Example = lazy(() => import("./layout/example/example"));
@@ -40,7 +39,6 @@ export default function App(){
                         </Route>
                     </Switch>
                 </Suspense>
-                <Footer />
             </Router>
         </ErrorBoundary>
     );
