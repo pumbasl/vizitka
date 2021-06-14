@@ -28,7 +28,7 @@ export default function App(){
             <Background />
             <Router>
                 <Header />
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<div style={{color: 'white'}}>Loading...</div>}>
                     <Switch>
                         <Route exact path='/' component={Main} />
                         <Route exact path='/example' component={Example} />

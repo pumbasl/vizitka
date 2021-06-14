@@ -20,4 +20,20 @@ const MainContainerStyle = styled.div(props => ({
     padding: '20px',
 }));
 
-export { ContactsContainer, MainContainerStyle };
+const CommentsContainerStyle = styled.div({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    color: 'black',
+    marginTop: '15px'
+});
+
+const CommentCardStyle = styled.div({
+    width: '630px',
+    backgroundColor: 'white',
+    marginBottom: '10px',
+    padding: '10px'
+});
+
+export { ContactsContainer, MainContainerStyle, CommentsContainerStyle, CommentCardStyle };

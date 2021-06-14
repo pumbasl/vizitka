@@ -1,0 +1,12 @@
+.inputHolder{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    .boxForm{
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        background-color: rgba(255,255,255, .2);
+        padding: 10px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+}

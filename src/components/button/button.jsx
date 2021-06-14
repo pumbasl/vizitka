@@ -8,7 +8,7 @@ const Button = (props) => {
         color: props.color ? "black" : "white",
         padding: "10px",
         borderRadius: '4px',
-        textDecoration: 'none'
+        textDecoration: 'none',
     };
     return(
         <Link style={CustomStyle} className="defaultButton" to={props.link}>{props.children}</Link>

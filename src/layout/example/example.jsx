@@ -1,14 +1,17 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
+import SiteImage from '../../media/img/pikcha.svg';
+
 import MainContainer from '../../components/MainContainer/MainContainer';
 
 export default function Example(){
     return(
         <MainContainer>
 
-            <Card style={{ width: '18rem', height: '420px', color: 'black' }} className="mr-2 mt-2">
-                <Card.Img variant="top" height="180px" src="https://picsum.photos/200/" />
+            <Card style={{ width: '18rem', height: '450px', color: 'black' }} className="mr-2 mt-2">
+                <Card.Img variant="top" height="180px" src={SiteImage} />
+                <hr />
                 <Card.Body>
                     <Card.Title>Сайт визитка (Старая)</Card.Title>
                     <Card.Text>
@@ -22,8 +25,9 @@ export default function Example(){
                 </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem', height: '420px', color: 'black' }} className="mr-2 mt-2">
-            <Card.Img variant="top" height="180px" src="https://picsum.photos/200/" />
+            <Card style={{ width: '18rem', height: '450px', color: 'black' }} className="mr-2 mt-2">
+            <Card.Img variant="top" height="180px" src={SiteImage} />
+                <hr />
                 <Card.Body>
                     <Card.Title>Сайт со спектром не больших услуг</Card.Title>
                     <Card.Text>
@@ -37,8 +41,9 @@ export default function Example(){
                 </Card.Body>
             </Card>
 
-            <Card style={{ width: '18rem', height: '420px', color: 'black' }} className="mr-2 mt-2">
-            <Card.Img variant="top" height="180px" src="https://picsum.photos/200/" />
+            <Card style={{ width: '18rem', height: '450px', color: 'black' }} className="mr-2 mt-2">
+            <Card.Img variant="top" height="180px" src={SiteImage} />
+                <hr />
                 <Card.Body>
                     <Card.Title>Сайт на котором Вы сейчас находитесь)</Card.Title>
                     <Card.Text>
