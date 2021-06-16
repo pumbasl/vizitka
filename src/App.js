@@ -12,8 +12,8 @@ import Background from './components/background/background';
 //Страницы
 import ErrorBoundary from './layout/errors/ErrorBoundary'; // Предохранитель
 
+import ViewSource from './layout/viewsource/viewsource';
 import Header from './layout/header/header';
-import Footer from './layout/footer/footer';
 
 const Main = lazy(() => import("./layout/main/main"));
 const Example = lazy(() => import("./layout/example/example"));
@@ -29,7 +29,7 @@ export default function App(){
             <Background />
             <Router>
                 <Header />
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<div style={{color: 'white'}}>Loading...</div>}>
                     <Switch>
                         <Route exact path='/' component={Main} />
                         <Route exact path='/example' component={Example} />
@@ -40,7 +40,7 @@ export default function App(){
                         </Route>
                     </Switch>
                 </Suspense>
-                <Footer />
+                <ViewSource />
             </Router>
         </ErrorBoundary>
     );

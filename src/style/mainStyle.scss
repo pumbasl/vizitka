@@ -1,10 +1,20 @@
 @import "~bootstrap/scss/bootstrap";
 @import "../components/background/style.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap');
+
+@import "./mainMedia.scss";
+
+body{
+    font-family: 'Comfortaa', cursive;
+}
+
 ::selection {
     background: cyan;
+    color: black;
 }
 
 ::-moz-selection {
     background: cyan;
+    color: black;
 }

@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { pulse } from 'react-animations';
 
 const ContactsContainer = styled.div({
     textAlign: "center",
@@ -9,8 +10,8 @@ const ContactsContainer = styled.div({
     boxShadow: "0 0 10px rgba(0,0,0,0.5)",
 });
 
-const MainContainerStyle = styled.div({
-    width: props => props.width ? props.width : "100vw",
+const MainContainerStyle = styled.div(props => ({
+    width: props.width ? props.width : "100vw",
     color: 'white',
     display: 'flex',
     flexWrap: 'wrap',
@@ -18,19 +19,28 @@ const MainContainerStyle = styled.div({
     justifyContent: 'center',
     height: '80vh',
     padding: '20px',
+}));
+
+const CommentsContainerStyle = styled.div({
+    color: 'black',
+    margin: '10px'
 });
 
-// const DefaultCenterCont
+const CommentCardStyle = styled.div({
+    backgroundColor: 'white',
+    marginBottom: '10px',
+    padding: '10px'
+});
 
-const FooterStyle = styled.div({
+const ViewSourceStyle = styled.div({
     position: 'fixed',
     bottom: 0,
+    left: 0,
     color: 'white',
-    textAlign: 'center',
-    width: '100%',
-    height: '5vh',
-    backgroundColor: 'rgba(54, 0, 95, .3)',
-    paddingTop: '10px'
+    margin: '15px'
 });
 
-export { ContactsContainer, MainContainerStyle, FooterStyle };
+const PulseAnim = styled.div`
+    animation: 2s ${keyframes`${pulse}`} infinite`;
+
+export { ContactsContainer, MainContainerStyle, CommentsContainerStyle, CommentCardStyle, ViewSourceStyle, PulseAnim };
