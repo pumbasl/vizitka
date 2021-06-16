@@ -22,14 +22,29 @@ const MainContainerStyle = styled.div(props => ({
 }));
 
 const CommentsContainerStyle = styled.div({
-    color: 'black',
+    color: 'white',
     margin: '10px'
 });
 
 const CommentCardStyle = styled.div({
-    backgroundColor: 'white',
     marginBottom: '10px',
-    padding: '10px'
+    padding: '10px',
+    borderRadius: '10px',
+    backgroundColor: 'rgba(91,100,120, .2)',
+    boxShadow: ' 0 0 10px rgba(0,0,0,1)'
+});
+
+const CommentCardTitle = styled.div({
+    textAlign: 'right',
+    fontFamily: 'Noto Sans JP, sans-serif',
+    paddingBottom: '15px'
+});
+
+const CommentCardFooter = styled.div({
+    textAlign: 'right',
+    fontFamily: 'Noto Sans JP, sans-serif',
+    paddingTop: '15px',
+    fontSize: '70%'
 });
 
 const ViewSourceStyle = styled.div({
@@ -43,4 +58,4 @@ const ViewSourceStyle = styled.div({
 const PulseAnim = styled.div`
     animation: 2s ${keyframes`${pulse}`} infinite`;
 
-export { ContactsContainer, MainContainerStyle, CommentsContainerStyle, CommentCardStyle, ViewSourceStyle, PulseAnim };
+export { ContactsContainer, MainContainerStyle, CommentsContainerStyle, CommentCardStyle, CommentCardTitle, CommentCardFooter, ViewSourceStyle, PulseAnim };

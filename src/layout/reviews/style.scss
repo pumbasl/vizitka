@@ -12,3 +12,12 @@
         border-radius: 5px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 339px) {
+    .wrapper{
+        .boxForm{
+            padding: 5px;
+        }
+    }
+
+}

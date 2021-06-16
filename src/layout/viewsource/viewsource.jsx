@@ -9,7 +9,7 @@ export default function ViewSource(){
     return(
         <ViewSourceStyle>
             <PulseAnim>
-                <Button href="https://github.com/pumbasl/pumbasl.github.io" variant="dark">
+                <Button href="https://github.com/pumbasl/vizitka" target="_blank" variant="dark">
                     <img width="20px" src={GitHubLogo} alt="GitHubLogo" /> <span className="textSource">View source</span>
                 </Button>
             </PulseAnim>
