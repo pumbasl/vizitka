@@ -12,6 +12,7 @@ import Background from './components/background/background';
 //Страницы
 import ErrorBoundary from './layout/errors/ErrorBoundary'; // Предохранитель
 
+import ViewSource from './layout/viewsource/viewsource';
 import Header from './layout/header/header';
 
 const Main = lazy(() => import("./layout/main/main"));
@@ -39,6 +40,7 @@ export default function App(){
                         </Route>
                     </Switch>
                 </Suspense>
+                <ViewSource />
             </Router>
         </ErrorBoundary>
     );
