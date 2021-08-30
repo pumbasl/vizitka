@@ -14,7 +14,6 @@ export default function Header(){
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav>
                     <NavLink to="/example" className="nav-link">Примеры работ</NavLink>
-                    <NavLink to="/reviews" className="nav-link">Отзывы</NavLink>
                     <NavLink to="/contacts" className="nav-link">Контакты</NavLink>
                 </Nav>
             </Navbar.Collapse>

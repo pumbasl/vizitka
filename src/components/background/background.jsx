@@ -1,3 +1,4 @@
+import React from 'react';
 import video from '../../media/video/secondbackground.mp4';
 
 export default function Background(){
@@ -7,7 +8,7 @@ export default function Background(){
                 <source src={video} type="video/mp4" />
             </video>
             <div className="blur"></div>
-        </>
+    </>
         
     );
 }

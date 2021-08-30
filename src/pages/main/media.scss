@@ -1,18 +1,21 @@
-@media (min-width: 320px) and (max-width: 528px) {
+@media (min-width: 320px) and (max-width: 558px) {
     .mainContainer{
         justify-content: center;
         .info{
-            .scaleTitleName{
-                background: none;
-            }
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
     }
 }
-@media (min-width: 320px) and (max-width: 743px) {
+
+@media (min-width: 320px) and (max-width: 768px) {
     .mainContainer{
+        justify-content: center;
         text-align: center;
         .info{
             .scaleTitleName{
+                background: none;
                 .titleName{
                     padding: 0;
                 }

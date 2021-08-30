@@ -1,14 +1,47 @@
 import styled, { keyframes } from 'styled-components';
 import { pulse } from 'react-animations';
+import CovertBack from '../media/img/convert.jpg';
 
-const ContactsContainer = styled.div({
-    textAlign: "center",
-    backgroundColor: "rgba(255,255,255, .2)",
-    borderRadius: "5px",
-    width: "310px",
-    padding: "20px",
-    boxShadow: "0 0 10px rgba(0,0,0,0.5)",
-});
+const CustomLink = styled.a`
+    text-decoration: none;
+    color: lime;
+`;
+
+const Convert = styled.div`
+    background: url(${CovertBack});
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 2px;
+    width: 90%;
+    height: 400px;
+    transform: rotate(-5deg);
+    color: black;
+    padding: 15px;
+
+    @media (min-width: 1024px) {
+        width: 940px;
+    }
+`;
+
+const WaterMark = styled.div`
+    width: 108px;
+    padding: 4px;
+    background-color: gray;
+    outline-color: red;
+    outline-style: dashed;
+    outline-width: 2px;
+`;
+
+const LabelConvert = styled.div`
+    margin: 20px;
+    width: 90%;
+`;
+
+const TextConvert = styled.div`
+    position: absolute;
+    margin-bottom: 20px;
+    bottom: 0;
+`;
 
 const MainContainerStyle = styled.div(props => ({
     width: props.width ? props.width : "100vw",
@@ -56,6 +89,7 @@ const ViewSourceStyle = styled.div({
 });
 
 const PulseAnim = styled.div`
-    animation: 2s ${keyframes`${pulse}`} infinite`;
+    animation: 2s ${keyframes`${pulse}`} infinite
+`;
 
-export { ContactsContainer, MainContainerStyle, CommentsContainerStyle, CommentCardStyle, CommentCardTitle, CommentCardFooter, ViewSourceStyle, PulseAnim };
+export { CustomLink, Convert, WaterMark, LabelConvert, TextConvert, MainContainerStyle, CommentsContainerStyle, CommentCardStyle, CommentCardTitle, CommentCardFooter, ViewSourceStyle, PulseAnim };
